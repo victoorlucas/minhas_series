@@ -1,30 +1,19 @@
 import firebase from '../config/firebase'
 
-exports.load = async (id) => {
+module.exports = {
+    load: async (id) => {
 
-        let response;
+        let response = { status: false };
         
         let child = firebase.database().ref('atividades').child(id)
         await child.once('value', snap => {
-            
-            response = {status: true, atividade: snap.val()}
-            
+            response = {
+                status: true,
+                atividade: snap.val()
+            }
         })
-        return response;
 
+        return response;
     }
 
-// module.exports = {
-//     load: async (id) => {
-
-//         let response;
-        
-//         let child = await firebase.database().ref('atividades').child(id)
-//         child.once('value', snap => {
-            
-//             response = {status: true, atividade: snap.val()}
-//             return response;
-//         })
-
-//     }
-// }
+}
