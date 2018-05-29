@@ -1,1 +1,2 @@
-# minhas_series
+# Minhas Séries
+Aplicação voltada para gerenciameto de quais séries o usuário está assistindo. Feito com React e Firebase afim de estudar a acoplação dos mesmos e melhorar minha organização de código (desvincular tudo de um arquivo e começar a usar controllers)
