@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import 'bulma.min.css'
 
 //Rotas
 import Inicio from './pages/Inicio';
