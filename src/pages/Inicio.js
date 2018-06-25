@@ -40,10 +40,12 @@ class Inicio extends Component {
 
   render() {
     return (
-      <div>
-        <Link to="/nova">Nova atividade</Link>
-        <h1>Atividades existentes:</h1>
-        {this.renderizar()}
+      <div className="container">
+        <Link to="/nova" className="button">Nova atividade</Link>
+        <div className="content">
+          <h1>Atividades existentes:</h1>
+          {this.renderizar()}
+        </div>
       </div>
     );
   }

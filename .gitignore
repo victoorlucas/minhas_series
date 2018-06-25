@@ -1,2 +1,4 @@
 node_modules/
 src/config/firebase.js
+src/pages/Testes.js
+src/controllers/TestesController.js
